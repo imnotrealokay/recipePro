@@ -62,7 +62,13 @@ export default function Auth({isLogin}) {
         <div className='text-sm mt-6'>
             Password
         </div>
+
         <input value={password} onChange={(e)=> setPassword(e.target.value)} type="password" className='w-full h-10 rounded-lg px-2 outline-black bg-gray-200' placeholder='Password' />
+        <div className=' mt-4 text-sm text-green-400 flex flex-row justify-end'>
+            {isLogin ? <div className=' cursor-pointer' onClick={()=> navigate("/signup")} >
+                Go to sign up
+        </div> : <div className=' cursor-pointer'  onClick={()=> navigate("/login")}> Go to log in </div>}
+        </div>
         <button onClick={()=>onClickHandler()} className='h-10 bg-green-400 rounded-lg mt-6 cursor-pointer'>Submit</button>
       </div>
       

@@ -5,7 +5,10 @@ const userSchema = new mongoose.Schema({
     },
     name:{
         type: String
-    }
+    },
+    favorite: [{type: String}]
+    ,
+    recipy: [{type: String}]
 })
 const userModel = mongoose.model("user", userSchema)
 export default userModel

@@ -35,7 +35,7 @@ const router = createBrowserRouter([
     element: <MyRecipies/>
   },
   {
-    path: "/viewrecipy",
+    path: "/viewrecipy/:id",
     element: <ViewRecipe/>
   },
   {
