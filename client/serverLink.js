@@ -1,4 +1,4 @@
 
-let link = "http://localhost:3000"
+let link = "https://recipepro.onrender.com"
 
 export default link
